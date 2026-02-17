@@ -107,14 +107,20 @@ Sumber dataset database BI (postgresql) :
 3. Data Kosong
    
    ✔ Tidak ditemukan adanya data kosong pada saat EDA
+   
+   ![MV](EDA/Miss_value.png)
 
 5. Konsistensi Format
    
    ✔ Ditemukan ada 1 inconsistency data format, yaitu pada kolom Date yang terbaca sebagai string. Dilakukan konversi format dari string ke date dengan perintah pandas.to_datetime() di python
+   
+![MDT](EDA/Tranformasiformat_tanggal.png)
 
 7. Outlier
    
-   ✔ Ditemukan outlier pada data quantity dan Unit Price. Tapi sepertinya ini adalah data transaction Asli yang tidak perlu diubah. Kebanyakan data outlier pada Price dan quantity adalah harga dan jumlah terjual dari produk. Sehingga tidak dilakukan perubahan pada data. 
+   ✔ Ditemukan outlier pada data quantity dan Unit Price. Tapi sepertinya ini adalah data transaction Asli yang tidak perlu diubah. Kebanyakan data outlier pada Price dan quantity adalah harga dan jumlah terjual dari produk. Sehingga tidak dilakukan perubahan pada data.
+   
+![MDT](EDA/Outlier.png)
 
 # Menentukan Objek Data 
 - order_id
